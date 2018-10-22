@@ -1,0 +1,126 @@
+										/*estilos basicos*/
+*{
+padding:0px;
+margin:0px;
+}
+header{
+	background:#004080;
+	position: fixed;
+	z-index:5000;
+	top:0px;
+}
+
+/********************************
+/*principal-header-logo-principal
+/*****************************/
+.container-fluid .row .logo-principal img{
+	width:100%;
+}
+/********************************
+/*principal-header-titulo-principal
+/*****************************/
+.container-fluid  .row  .titulo-principal h2{
+	 color:white;
+	 font-family:Arial;
+	 margin-left:60px;
+}
+/********************************
+/*principal-header-cerrar
+/*****************************/
+.container-fluid .row .cerrar a{
+	color: white;
+	font-family: Arial;
+	text-decoration:none;
+}
+/********************************
+/*principal-nav-informacion1
+/*****************************/	
+nav{
+	margin-top:80px;
+	margin-bottom:20px;
+	border-bottom:2px solid black;
+}
+.container .row .informacion1 h3{
+	 margin-left:420px;
+}
+/********************************
+/*principal-nav-informacion2
+/*****************************/
+.container .row .informacion2 p{
+	 margin-top:5px;
+	 font-size:20px;
+	 margin-left:-60px;
+}
+/********************************
+/*principal-nav-informacion3
+/*****************************/
+.container .row .informacion3 p{
+	margin-top:7px;
+}
+/********************************
+/*principal-section-criterios 
+/*****************************/ 
+.container .row .criterio1, .criterio2 , .criterio3, .criterio4, .criterio5, .criterio6, .criterio7, .criterio8 , .criterio9{
+	margin-bottom:70px;
+	font-family:Arial;
+}
+.container .row .criterio1 {
+	font-family:Arial;
+}
+/********************************
+/*principal-section-intrucciones 
+/*****************************/ 
+.container .row .intrucciones {
+   background:#004080;;
+   margin-bottom:20px;
+}
+.container .row .intrucciones h3{
+	color:white;
+}
+/********************************
+/*principal-section-decripStudiante 
+/*****************************/ 
+.container .row .decripStudiante .form-group label {
+   color:black;
+   font-family: Arial;
+   font-size: 25px;
+}
+/********************************
+/*principal-section-btn-row-btn1 
+/*****************************/ 
+.container .row .btn .row .btn1  button{
+	width:300px;
+	height:50px;
+	background:#004080;
+	border:1px solid #004080;;
+	color:white;
+	margin-left:180px;
+	font-family: Arial;
+}
+.container .row .btn .row .btn1  button:hover{
+	background:rgb(0, 153, 255,.9);
+	cursor:pointer;
+}
+/********************************
+/*principal-section-calificar
+/*****************************/ 
+.container .row .calificar span{
+	 font-size: 30px;
+	 margin-left:10px;
+	 color:green;
+}
+.container .row .calificar .icon-cross{
+	color:red;
+}
+/********************************
+/*principal-footer-titutlo-footer
+/*****************************/ 
+footer{
+	background:#004080;
+}
+.container-fluid .row .titulo-footer h1{
+	margin-left:550px;
+	color:white;
+	font-size:30px;
+	font-family:Arial, Helvetica, sans-serif;
+}

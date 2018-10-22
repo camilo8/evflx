@@ -1,0 +1,29 @@
+header{
+	background:#004080;
+	position: fixed;
+	z-index:5000;
+	top:0px;
+}
+										
+/********************************
+/*Crear-crterio-header-logo-principal
+/*****************************/
+.container-fluid .row .logo-principal img{
+width:100%;
+}
+/********************************
+/*Crear-criterio-header-titulo-principal
+/*****************************/
+.container-fluid  .row  .titulo-principal h2{
+color:white;
+font-family:Arial;
+margin-left:60px;
+}
+/********************************
+/*Crear-criterio-header-cerrar
+/*****************************/
+.container-fluid .row .cerrar a{
+color: white;
+font-family: Arial;
+text-decoration:none;
+}

@@ -1,0 +1,83 @@
+										/*estilos basicos*/
+	*{
+		padding:0px;
+		margin:0px;
+	}
+	header{
+        background:#004080;
+	    position: fixed;
+		z-index:5000;
+		top:0px;
+	}
+											
+/********************************
+/*principal-header-logo-principal
+/*****************************/
+.container-fluid .row .logo-principal img{
+	width:100%;
+}
+/********************************
+/*principal-header-titulo-principal
+/*****************************/
+.container-fluid  .row  .titulo-principal h2{
+ color:white;
+ font-family:Arial;
+ margin-left:60px;
+}
+/********************************
+/*principal-header-cerrar
+/*****************************/
+.container-fluid .row .cerrar a{
+color: white;
+font-family: Arial;
+text-decoration:none;
+	}
+	/********************************
+/*principal-section-titulo-principalProfe
+/*****************************/
+.container .row .titulo-principalProfe{
+  margin-top:110px;
+  margin-left:500px;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+	/********************************
+/*principal-section-grado
+/*****************************/
+.container .row .grado{
+	margin-top:70px;
+}
+.container .row .grado .card{
+	background: #004080;
+	font-family:Arial;
+}
+
+.container .row .grado .card h5{
+	color:white;
+}
+.container .row .grado .card-body{
+	background: white;
+}
+.container .row .grado .card-body h5{
+	color:black;
+}
+.container .row .grado .card-body a{
+	border-radius:0px;
+}
+.container .row .grado .card-body .cantidad-evaluados{
+	 margin-left:850px;
+	
+}
+/********************************
+/*principal-footer-titutlo-footer
+/*****************************/ 
+footer{
+	background:#004080;
+	margin-top:143px;
+}
+.container-fluid .row .titulo-footer h1{
+	margin-left:550px;
+	color:white;
+	font-size:30px;
+	font-family:Arial, Helvetica, sans-serif;
+}

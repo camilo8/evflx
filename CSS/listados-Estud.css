@@ -1,0 +1,66 @@
+									/*estilos basicos*/
+	*{
+		padding:0px;
+		margin:0px;
+	}
+	header{
+        background:#004080;
+	    position: fixed;
+		z-index:5000;
+		top:0px;
+	}
+											
+/********************************
+/*Listado-Estudiante-header-logo-principal
+/*****************************/
+.container-fluid .row .logo-principal img{
+	width:100%;
+}
+/********************************
+/*Listado-Estudiante-header-titulo-principal
+/*****************************/
+.container-fluid  .row  .titulo-principal h2{
+ color:white;
+ font-family:Arial;
+ margin-left:60px;
+}
+/********************************
+/*Listado-Estudiante-header-cerrar
+/*****************************/
+.container-fluid .row .cerrar a{
+color: white;
+font-family: Arial;
+text-decoration:none;
+	}
+/********************************
+/*Listado-Estudiante-section-titulo-listado-Estudiante
+/*****************************/
+.container .row .titulo-listado-estud{
+	margin-top: 100px;
+	margin-bottom:40px;
+}
+.container .row .titulo-listado-estud h1{
+	margin-left:350px;
+	font-family: Arial;
+	font-size:30px;
+}
+/********************************
+/*Listado-Estudiante-section-listado-Estudiante
+/*****************************/
+.container .row .tabla-student{
+	margin-top:100px;
+}
+
+/********************************
+/*lsitado-Estud-footer-titutlo-footer
+/*****************************/ 
+footer{
+	background:#004080;
+	margin-top:349px;
+}
+.container-fluid .row .titulo-footer h1{
+	margin-left:550px;
+	color:white;
+	font-size:30px;
+	font-family:Arial, Helvetica, sans-serif;
+}

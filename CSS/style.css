@@ -1,0 +1,65 @@
+                  								/*estilos basicos */
+*{
+	 margin:0px;
+	 padding:0px;
+}
+body{
+    background-color: black;
+}
+/****************
+***login-row 
+*****************/
+.container .row {
+	 margin-top:280px;
+	 margin-left:350px;
+	 width:400px;
+	 background:#ffffff;
+}
+/****************	
+***login-logo
+*****************/
+.container .row .logo{
+	margin-top:-130px;
+	margin-left:-30px;
+}
+/****************
+***login-titulo-login
+*****************/
+.container .row .titulo-login{
+	position:relative;
+	 width:200px;
+	 background:rgb(0, 153, 255,.8);
+	 bottom:25px;
+}
+ .container .row .titulo-login p{
+	  margin:10px 110px;
+	  color:white;
+	  font-family:Arial;
+ }
+ /****************
+***login-login
+*****************/
+.container .row .login .col-auto {
+    margin-bottom:20px;
+}
+ /****************
+***login-btn
+*****************/
+.container .row .btn-login input{
+	background:rgb(0, 153, 255,.8);
+	border:1px solid rgb(0, 153, 255,.8);
+	width:350px;
+	height:35px;
+	color:white;
+	margin-bottom:20px;
+	font-size:11px;
+	font-family:Arial;
+}
+.container .row .btn-login input:hover{
+	cursor: pointer;
+    background:rgb(0, 153, 255,.9);
+}
+												/*estilos de la principal*/
+ /****************
+***principal-header-logo
+*****************/
