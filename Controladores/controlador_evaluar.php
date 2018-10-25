@@ -14,6 +14,7 @@ $crite = new  Evaluacion();
 if(count($result) > 0){
 	$_SESSION['u_eval'] = $result;
 	$_SESSION['u_cri'] = $result1;
+	$_SESSION['u_id'] = $id;
 	header('Location:../Vistas/Descrip-Profe.php');
 }else{
 	 header('Location:../Vistas/Listados-Estud.php');

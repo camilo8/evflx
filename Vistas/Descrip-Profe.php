@@ -25,8 +25,7 @@
 			   if(isset($_SESSION['u_eval']) && isset($_SESSION['u_cri'])){
 					 $arrayEval = $_SESSION['u_eval'];
 					 $arrayCrite = $_SESSION['u_cri'];
-			//	 print_r($arrayCrite);
-				///  print_r($arrayEval);
+					 $id = $_SESSION['u_id'];
 				   ?>
 				   <a href="../Controladores/Controlador_cerrar.php?cerrar=si" class="icon-exit"> Cerrar Secion</a>
 				   <?php	   
@@ -51,7 +50,6 @@
 					<?php 
 				 } 
 			   ?>
-			
 			</div>
 		</div>
 	</nav>
@@ -80,10 +78,14 @@
 		<tr>
 				<td  colspan="3">
 				<div class="form-group">
+				<form action="../Controladores/Controlador_update.php" method="GET">
     <label for="exampleFormControlTextarea1">Comentario Profesor</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="DescripP"></textarea>
+
+						<input type="hidden" name="id" value="<?php echo $id;?>">
 		<br>
-		  <button class="btn btn-primary">Guardar</button>
+		  <button type="submit"  class="btn btn-primary">Guardar</button>
+				</form>
   </div>
 				</td>
 				</tr>
@@ -116,8 +118,7 @@
 						?>
     <tr>
 				<td  colspan="3">2</td>
-				<td  colspan="3"><?php echo$val2['Criterio2']; ?></td>
-				
+				<td  colspan="3"><?php echo$val2['Criterio2']; ?></td>	
 						<?php  
 					}
 			?>
@@ -187,10 +188,17 @@
 				<td  colspan="3">
 				<?php echo$val2['DespcrionEstu']; ?>
 			  </td>
+    </tr>
+		<td  colspan="3">
+				  <h6>Comentario Estudiante</h6>
+			  </td>
+				<td  colspan="3">
+				<?php echo$val2['DespcrionPro']; ?>
+			  </td>
+    </tr>
 						<?php  
 					}
 			?>
-    </tr>
   </tbody>
 </table>
 				</div>
