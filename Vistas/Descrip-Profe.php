@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../CSS/Descrip-profe.css">
 	<link rel="stylesheet" href="../CSS/bootstrap.min.css">
 	<link rel="stylesheet" href="../fonts/style.css">
+	<link rel="stylesheet" href="../css/Descrip-profe-print.css" media="print">
 </head>
 <body style="background-color:;">
 	<header class="container-fluid">
@@ -20,7 +21,6 @@
 			</div>
 			<div class="cerrar col-2">
 			   <?php 
-			   
 			   session_start();
 			   if(isset($_SESSION['u_eval']) && isset($_SESSION['u_cri'])){
 					 $arrayEval = $_SESSION['u_eval'];
@@ -28,7 +28,8 @@
 					 $id = $_SESSION['u_id'];
 				   ?>
 				   <a href="../Controladores/Controlador_cerrar.php?cerrar=si" class="icon-exit"> Cerrar Secion</a>
-				   <?php	   
+					 
+					 <?php	   
 				}else{
 					 header('Location:../index.php');
 				}
@@ -36,7 +37,7 @@
 			</div>
 		</div>
 	</header>
-	<nav class="container col-12">
+	<nav class="container col-12" >
 		<div class="row">
 			<div class="informacion2 col-4">
 			  <?php
@@ -46,15 +47,18 @@
 						case 1:
 						echo"-1A";
 						break;
+						
 					}?> <span class="icon-book"></span></p>
 					<?php 
 				 } 
 			   ?>
+				 <input type="button" value="Imprimir" onclick="window.print()">
 			</div>
 		</div>
+		
 	</nav>
 	<section>
-	  <div class="container">
+	  <div class="container" id="container">
 	     <div class="row">
 			  <div class="Eval col-8">
 			  <table class="table table-bordered">
@@ -78,20 +82,18 @@
 		<tr>
 				<td  colspan="3">
 				<div class="form-group">
-				<form action="../Controladores/Controlador_update.php" method="GET">
-    <label for="exampleFormControlTextarea1">Comentario Profesor</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="DescripP"></textarea>
-
-						<input type="hidden" name="id" value="<?php echo $id;?>">
-		<br>
-		  <button type="submit"  class="btn btn-primary">Guardar</button>
-				</form>
+							 <form action="../Controladores/Controlador_update.php" method="GET">
+							 <label for="exampleFormControlTextarea1">Comentario Profesor</label>
+							 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="DescripP"></textarea>
+							 <input type="hidden" name="id" value="<?php echo $id;?>">
+							 <br>
+							 <button type="submit"  class="btn btn-primary">Guardar</button>
+							</form>
   </div>
 				</td>
 				</tr>
   </tbody>
 </table>
-
 			  </div>
 				<div class="tableValor col-4">
 				<table class="table table-bordered">
@@ -108,7 +110,6 @@
     <tr>
 				<td  colspan="3">1</td>
 				<td  colspan="3"><?php echo$val2['Criterio1']; ?></td>
-				
 						<?php  
 					}
 			?>
@@ -128,8 +129,7 @@
 						?>
     <tr>
 				<td  colspan="3">3</td> 	  
-				<td  colspan="3"><?php echo$val2['Criterio3']; ?></td>
-				
+				<td  colspan="3"><?php echo$val2['Criterio3']; ?></td>	
 						<?php  
 					}
 			?>
@@ -190,7 +190,7 @@
 			  </td>
     </tr>
 		<td  colspan="3">
-				  <h6>Comentario Estudiante</h6>
+				  <h6>Comentario Profesor</h6>
 			  </td>
 				<td  colspan="3">
 				<?php echo$val2['DespcrionPro']; ?>
@@ -203,6 +203,7 @@
 </table>
 				</div>
 		 </div>
+		 
 	  </div>
 	</section>
 		<footer class="container-fluid">
@@ -214,5 +215,7 @@
 	</footer>
 <script src="../JS/jquery.js"></script>
 <script src="../JS/bootstrap.min.js"></script>
+<script language="JavaScript">
+</script>
 </body>
 </html>

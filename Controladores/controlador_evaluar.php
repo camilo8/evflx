@@ -8,6 +8,7 @@ $crite = new  Evaluacion();
 		 $id = $_GET['id'];
 		 $result= $eval1->Eval($id);
 		 $result1 = $crite->Crite($grado);
+		
 	}
 	session_start();
    

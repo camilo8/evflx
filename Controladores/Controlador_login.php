@@ -52,8 +52,10 @@ if($var == 1 ){
 			 $_SESSION['u_apellido'] = $apellido;
 			 $_SESSION['u_grado'] = $grado;
 			 $_SESSION['u_id'] = $id;
-			 if($proceso || $var1 == 0){
+			 if( $var1 == 0){
 				 header('Location:../Vistas/Principal-Estud.php');
+			 }else if ($proceso = "OK" && $var1 == 1){
+				header('Location:../Controladores/controlador_evaluar.php?id='.$id.'&Grado='.$grado);
 			 }else{
 				header('Location:../index.php?proceso=no');
 			 }

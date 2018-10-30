@@ -52,14 +52,14 @@
 						<input type="password" class="form-control 
 						   <?php 
 						     	if($_GET['error'] == 'si'){
-                                     echo 'is-invalid';
+                         echo 'is-invalid';
 								 }
 						   ?>		
 						" id="inlineFormInputGroup" placeholder="Codigo" name="codigo">
 						<div class="invalid-feedback">
 							<?php 
 							  if(isset($_GET['error']) == 'si'){
-                                   echo'Codigo no existe porfavor dejite un codigo valido';
+                           echo'Codigo no existe porfavor dejite un codigo valido';
 							  }else{
 								   ?>
 								    Porfavor digite un codigo 
