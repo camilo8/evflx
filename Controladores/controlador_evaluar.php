@@ -4,12 +4,19 @@ require_once('../clases/Consult.php');
 $eval1 =  new Evaluacion();
 $crite = new  Evaluacion();
  if(isset($_GET['id']) && isset($_GET['Grado'])){
-	      $grado = $_GET['Grado'];
-		 $id = $_GET['id'];
-		 $result= $eval1->Eval($id);
-		 $result1 = $crite->Crite($grado);
+	 $grado = $_GET['Grado'];
+	 $id = $_GET['id'];
+	 $result= $eval1->Eval($id);
+	 $result1 = $crite->Crite($grado);
 		
 	}
+	if(isset($_GET['id']) && isset($_GET['Grado']) &&  isset($_GET['update'])){
+		$grado = $_GET['Grado'];
+		$id = $_GET['id'];
+		$result= $eval1->Eval($id);
+		$result1 = $crite->Crite($grado);
+		   
+	   }	
 	session_start();
    
 if(count($result) > 0){

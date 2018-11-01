@@ -42,6 +42,7 @@
 			<div class="informacion2 col-4">
 			  <?php
 			    foreach ($arrayEval as $key) {
+					     $Grado =  $key['Grado_id'];
 					?>
 					<p> <?php echo $key['Nombre']." ".$key['Apellido'];  switch($key['Grado_id']){
 						case 1:
@@ -52,10 +53,9 @@
 					<?php 
 				 } 
 			   ?>
-				 <input type="button" value="Imprimir" onclick="window.print()">
+				 <span class="icon-printer" onclick="window.print()"></span>
 			</div>
 		</div>
-		
 	</nav>
 	<section>
 	  <div class="container" id="container">
@@ -86,6 +86,7 @@
 							 <label for="exampleFormControlTextarea1">Comentario Profesor</label>
 							 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="DescripP"></textarea>
 							 <input type="hidden" name="id" value="<?php echo $id;?>">
+							 <input type="hidden" name="Grado" value="<?php echo $Grado;?>">
 							 <br>
 							 <button type="submit"  class="btn btn-primary">Guardar</button>
 							</form>
