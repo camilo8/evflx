@@ -4,12 +4,11 @@ padding:0px;
 margin:0px;
 }
 header{
-	background:#004080;
+	background-image: linear-gradient(-90deg, #004080  , rgb(0, 238, 255));
 	position: fixed;
 	z-index:5000;
 	top:0px;
 }
-
 /********************************
 /*principal-header-logo-principal
 /*****************************/
@@ -71,7 +70,7 @@ nav{
 /*principal-section-intrucciones 
 /*****************************/ 
 .container .row .intrucciones {
-   background:#004080;;
+   background:#004080;
    margin-bottom:20px;
 }
 .container .row .intrucciones h3{
@@ -92,7 +91,7 @@ nav{
 	width:300px;
 	height:50px;
 	background:#004080;
-	border:1px solid #004080;;
+	border:1px solid #004080;
 	color:white;
 	margin-left:180px;
 	font-family: Arial;
@@ -116,7 +115,7 @@ nav{
 /*principal-footer-titutlo-footer
 /*****************************/ 
 footer{
-	background:#004080;
+	background-image: linear-gradient(-90deg, #004080 , rgb(0, 238, 255));
 }
 .container-fluid .row .titulo-footer h1{
 	margin-left:550px;

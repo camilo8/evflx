@@ -4,7 +4,7 @@
 		margin:0px;
 	}
 	header{
-        background:#004080;
+        background-image: linear-gradient(-90deg, rgb(0, 238, 255), blue);
 	    position: fixed;
 		z-index:5000;
 		top:0px;
@@ -72,7 +72,7 @@ text-decoration:none;
 /*principal-footer-titutlo-footer
 /*****************************/ 
 footer{
-	background:#004080;
+	background-image: linear-gradient(-90deg, rgb(0, 238, 255), blue);
 	margin-top:143px;
 }
 .container-fluid .row .titulo-footer h1{

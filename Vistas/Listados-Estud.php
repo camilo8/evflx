@@ -39,11 +39,23 @@
 		 <div class="container">
 		    <div class="row">
 				<div class="tabla-student col-12">
+						<?php 
+							if(isset($_GET['Eval'])){
+								echo("
+											<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+											<strong>No hay resultados</strong> El estudiant@ no ha realizado Evaluacion
+											<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+												<span aria-hidden='true'>&times;</span>
+											</button>
+										</div>
+								");					
+							}				
+						?>
 					<table class="table">
 					<p>Listado del  grado <?php switch($grado){
-                         case  1:
-						      echo "1A";
-						  break;
+						case  1:
+						echo "1A";
+						break;
 					} 
 					?></p>
   <thead class="thead-dark">
@@ -81,5 +93,7 @@
 		</div>
 	</div>
 	</footer>
+<script src="../JS/jquery.js"></script>
+<script src="../JS/bootstrap.min.js"></script>
 </body>
 </html>

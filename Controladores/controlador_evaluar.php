@@ -9,14 +9,14 @@ $crite = new  Evaluacion();
 	 $result= $eval1->Eval($id);
 	 $result1 = $crite->Crite($grado);
 		
-	}
+		}
 	if(isset($_GET['id']) && isset($_GET['Grado']) &&  isset($_GET['update'])){
 		$grado = $_GET['Grado'];
 		$id = $_GET['id'];
 		$result= $eval1->Eval($id);
 		$result1 = $crite->Crite($grado);
 		   
-	   }	
+  }	
 	session_start();
    
 if(count($result) > 0){
@@ -25,7 +25,7 @@ if(count($result) > 0){
 	$_SESSION['u_id'] = $id;
 	header('Location:../Vistas/Descrip-Profe.php');
 }else{
-	 header('Location:../Vistas/Listados-Estud.php');
+	 header('Location:../Vistas/Listados-Estud.php?Eval=NO');
 }
 
 	
